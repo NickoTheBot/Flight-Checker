@@ -1,0 +1,196 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    display: block;
+    font-size: 3rem; /* Make the title large */
+    color: #0d6efd; /* A bright color for the title */
+    text-transform: uppercase; /* UPPERCASE letters for a bolder statement */
+    letter-spacing: 2px; /* Adding some spacing between letters */
+    margin-top: 2rem; /* Spacing from the top */
+    margin-bottom: 1rem; /* Spacing before the content starts */
+    text-shadow: 2px 2px 1px rgba(13, 110, 253, 0.7); /* Subtle text shadow for depth */
+}
+.login-container {
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    background-color: #222;
+}
+
+.login-form {
+    display: inline-block;
+    width: 300px;
+    padding-right: 20px;
+}
+
+.login-form h2 {
+    color: #0d6efd;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #333;
+    color: white;
+}
+.error-message {
+    color: red;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0d6efd;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0b5ed7;
+}
+.create-account-btn {
+    width: 70%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #00ff2a;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.create-account-btn:hover {
+    background-color: #00dd27;
+}
+
+
+.forgot-password {
+    color: #0d6efd;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.forgot-password:hover {
+    text-decoration: underline;
+}
+.error-message {
+    color: #ff0000; /* Red text color for error messages */
+    background-color: #ffeaea; /* Light red background color */
+    border: 1px solid #ffcccc; /* Red border */
+    padding: 10px;
+    margin-bottom: 20px; /* Spacing between the error message and the form */
+    border-radius: 5px; /* Optional: rounded corners for the error box */
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+input + small {
+    display: block;
+    margin-top: 5px;
+    color: #aaa;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+}
+.flight-number {
+    background-color: #f2f2f2;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+.flight-list {
+    list-style-type: none; /* Remove default list bullets */
+    padding: 0; /* Remove default padding */
+    width: 100%; /* Full width */
+    max-width: 800px; /* Or any maximum width you prefer */
+}
+
+.flight-number {
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White text color */
+    padding: 10px 15px; /* Padding inside each list item */
+    margin-bottom: 8px; /* Space between list items */
+    border-radius: 5px; /* Rounded corners */
+    border-left: 5px solid #0d6efd; /* Colored border on the left for accent */
+    font-size: 1.2rem; /* Larger font size */
+    transition: transform 0.2s ease-in-out; /* Smooth transition for hover effect */
+}
+.flight-info {
+    background-color: #1c1c1c;
+    border-left: 5px solid #0d6efd; /* default color for scheduled */
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 5px;
+}
+.flight-number:hover {
+    transform: translateX(10px); /* Move the flight number slightly to the right on hover */
+}
+.search-container form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search-container input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px 0 0 4px;
+    width: calc(100% - 120px);
+}
+
+.search-container button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 0 4px 4px 0;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+}
+
+
+/* You might want to add a media query for responsiveness on smaller screens */
+@media (max-width: 768px) {
+    .flight-number {
+        font-size: 1rem; /* Smaller font size on small screens */
+    }
+}
+
+
